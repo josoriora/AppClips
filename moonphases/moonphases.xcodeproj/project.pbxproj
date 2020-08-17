@@ -13,6 +13,8 @@
 		2F17B2CE24E625F100765F81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17B2CD24E625F100765F81 /* Preview Assets.xcassets */; };
 		2F17B2D924E625F100765F81 /* moonphasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17B2D824E625F100765F81 /* moonphasesTests.swift */; };
 		2F17B2E424E625F200765F81 /* moonphasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17B2E324E625F200765F81 /* moonphasesUITests.swift */; };
+		2FD47D1B24EB355300401DAF /* SwiftySunCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */; };
+		2FD47D1D24EB369300401DAF /* SwiftySunCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D1C24EB369300401DAF /* SwiftySunCalcTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		2F17B2DF24E625F200765F81 /* moonphasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moonphasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17B2E324E625F200765F81 /* moonphasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moonphasesUITests.swift; sourceTree = "<group>"; };
 		2F17B2E524E625F200765F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySunCalc.swift; sourceTree = "<group>"; };
+		2FD47D1C24EB369300401DAF /* SwiftySunCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySunCalcTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				2F17B2C624E625F000765F81 /* moonphasesApp.swift */,
 				2F17B2C824E625F000765F81 /* ContentView.swift */,
 				2F17B2CA24E625F100765F81 /* Assets.xcassets */,
+				2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */,
 				2F17B2CF24E625F100765F81 /* Info.plist */,
 				2F17B2CC24E625F100765F81 /* Preview Content */,
 			);
@@ -117,6 +122,7 @@
 			children = (
 				2F17B2D824E625F100765F81 /* moonphasesTests.swift */,
 				2F17B2DA24E625F200765F81 /* Info.plist */,
+				2FD47D1C24EB369300401DAF /* SwiftySunCalcTests.swift */,
 			);
 			path = moonphasesTests;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17B2C924E625F000765F81 /* ContentView.swift in Sources */,
+				2FD47D1B24EB355300401DAF /* SwiftySunCalc.swift in Sources */,
 				2F17B2C724E625F000765F81 /* moonphasesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17B2D924E625F100765F81 /* moonphasesTests.swift in Sources */,
+				2FD47D1D24EB369300401DAF /* SwiftySunCalcTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
