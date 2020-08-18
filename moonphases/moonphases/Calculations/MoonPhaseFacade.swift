@@ -24,11 +24,12 @@ final class MoonPhaseFacade {
     static private let firstQuarterPhaseValue = 0.25
     static private let fullMoonPhaseValue = 0.5
     static private let lastQuarterPhaseValue = 0.75
+    static private let maxPhaseValue = 1.0
     
     static func moonPhaseOn(date: Date) -> MoonPhase? {
         let moonIluminationInfo = SwiftySuncalc().getMoonIllumination(date: date)
         
-        if let phase = moonIluminationInfo["phase"] {
+        if let phase = moonIluminationInfo["phase"], phase >= newMoonPhaseValue, phase <= maxPhaseValue {
             return nameForPhase(phase)
         } else {
             return nil
@@ -36,7 +37,6 @@ final class MoonPhaseFacade {
     }
     
     static func nameForPhase(_ phase: Double) -> MoonPhase {
-        
         if doubleEqual(phase, newMoonPhaseValue) {
             return .newMoon
         } else if phase < firstQuarterPhaseValue {

@@ -82,4 +82,34 @@ class MoonPhaseFacadeTests: XCTestCase {
         // Then
         XCTAssertEqual(sut.nameForPhase(phase), .waningCrescent)
     }
+    
+    func test_MoonPhaseOn_2020Aug17_WaningCrescent() throws {
+        // Given
+        let date = try XCTUnwrap(dateFrom(year: 2020, month: 8, day: 17), "Insert a valid date")
+        
+        // Then
+        XCTAssertEqual(sut.moonPhaseOn(date: date), .waningCrescent)
+    }
+    
+    func test_MoonPhaseOn_2020Aug19_NewMoon() throws {
+        // Given
+        let date = try XCTUnwrap(dateFrom(year: 2020, month: 8, day: 19), "Insert a valid date")
+        
+        // Then
+        XCTAssertEqual(sut.moonPhaseOn(date: date), .newMoon)
+    }
+}
+
+fileprivate extension MoonPhaseFacadeTests {
+    func dateFrom(year: Int, month: Int, day: Int) -> Date? {
+        // Specify date components
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+
+        // Create date from components
+        let userCalendar = Calendar.current // user calendar
+        return userCalendar.date(from: dateComponents)
+    }
 }
