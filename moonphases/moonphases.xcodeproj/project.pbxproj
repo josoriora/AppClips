@@ -11,21 +11,13 @@
 		2F17B2C924E625F000765F81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17B2C824E625F000765F81 /* ContentView.swift */; };
 		2F17B2CB24E625F100765F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17B2CA24E625F100765F81 /* Assets.xcassets */; };
 		2F17B2CE24E625F100765F81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17B2CD24E625F100765F81 /* Preview Assets.xcassets */; };
-		2F17B2E424E625F200765F81 /* moonphasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17B2E324E625F200765F81 /* moonphasesUITests.swift */; };
-		2FD47D1B24EB355300401DAF /* SwiftySunCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */; };
 		2FD47D2024EB3D3A00401DAF /* MoonPhaseFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D1F24EB3D3A00401DAF /* MoonPhaseFacade.swift */; };
 		2FD47D2224EB649A00401DAF /* MoonPhaseFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D2124EB649A00401DAF /* MoonPhaseFacadeTests.swift */; };
+		3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25645424F3527A00A40518 /* AstrologyCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2F17B2D524E625F100765F81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F17B2BB24E625F000765F81 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F17B2C224E625F000765F81;
-			remoteInfo = moonphases;
-		};
-		2F17B2E024E625F200765F81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F17B2BB24E625F000765F81 /* Project object */;
 			proxyType = 1;
@@ -43,12 +35,9 @@
 		2F17B2CF24E625F100765F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F17B2D424E625F100765F81 /* moonphasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moonphasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17B2DA24E625F200765F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F17B2DF24E625F200765F81 /* moonphasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moonphasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F17B2E324E625F200765F81 /* moonphasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moonphasesUITests.swift; sourceTree = "<group>"; };
-		2F17B2E524E625F200765F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySunCalc.swift; sourceTree = "<group>"; };
 		2FD47D1F24EB3D3A00401DAF /* MoonPhaseFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseFacade.swift; sourceTree = "<group>"; };
 		2FD47D2124EB649A00401DAF /* MoonPhaseFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseFacadeTests.swift; sourceTree = "<group>"; };
+		3E25645424F3527A00A40518 /* AstrologyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F17B2DC24E625F200765F81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				2F17B2C524E625F000765F81 /* moonphases */,
 				2F17B2D724E625F100765F81 /* moonphasesTests */,
-				2F17B2E224E625F200765F81 /* moonphasesUITests */,
 				2F17B2C424E625F000765F81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				2F17B2C324E625F000765F81 /* moonphases.app */,
 				2F17B2D424E625F100765F81 /* moonphasesTests.xctest */,
-				2F17B2DF24E625F200765F81 /* moonphasesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,19 +106,10 @@
 			path = moonphasesTests;
 			sourceTree = "<group>";
 		};
-		2F17B2E224E625F200765F81 /* moonphasesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2F17B2E324E625F200765F81 /* moonphasesUITests.swift */,
-				2F17B2E524E625F200765F81 /* Info.plist */,
-			);
-			path = moonphasesUITests;
-			sourceTree = "<group>";
-		};
 		2FD47D1E24EB3CFF00401DAF /* Calculations */ = {
 			isa = PBXGroup;
 			children = (
-				2FD47D1A24EB355300401DAF /* SwiftySunCalc.swift */,
+				3E25645424F3527A00A40518 /* AstrologyCalculator.swift */,
 				2FD47D1F24EB3D3A00401DAF /* MoonPhaseFacade.swift */,
 			);
 			path = Calculations;
@@ -182,24 +153,6 @@
 			productReference = 2F17B2D424E625F100765F81 /* moonphasesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F17B2DE24E625F200765F81 /* moonphasesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F17B2EE24E625F200765F81 /* Build configuration list for PBXNativeTarget "moonphasesUITests" */;
-			buildPhases = (
-				2F17B2DB24E625F200765F81 /* Sources */,
-				2F17B2DC24E625F200765F81 /* Frameworks */,
-				2F17B2DD24E625F200765F81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F17B2E124E625F200765F81 /* PBXTargetDependency */,
-			);
-			name = moonphasesUITests;
-			productName = moonphasesUITests;
-			productReference = 2F17B2DF24E625F200765F81 /* moonphasesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,10 +166,6 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					2F17B2D324E625F100765F81 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 2F17B2C224E625F000765F81;
-					};
-					2F17B2DE24E625F200765F81 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 2F17B2C224E625F000765F81;
 					};
@@ -237,7 +186,6 @@
 			targets = (
 				2F17B2C224E625F000765F81 /* moonphases */,
 				2F17B2D324E625F100765F81 /* moonphasesTests */,
-				2F17B2DE24E625F200765F81 /* moonphasesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,13 +207,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F17B2DD24E625F200765F81 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17B2C924E625F000765F81 /* ContentView.swift in Sources */,
-				2FD47D1B24EB355300401DAF /* SwiftySunCalc.swift in Sources */,
+				3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */,
 				2FD47D2024EB3D3A00401DAF /* MoonPhaseFacade.swift in Sources */,
 				2F17B2C724E625F000765F81 /* moonphasesApp.swift in Sources */,
 			);
@@ -288,14 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F17B2DB24E625F200765F81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F17B2E424E625F200765F81 /* moonphasesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -303,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = 2F17B2C224E625F000765F81 /* moonphases */;
 			targetProxy = 2F17B2D524E625F100765F81 /* PBXContainerItemProxy */;
-		};
-		2F17B2E124E625F200765F81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F17B2C224E625F000765F81 /* moonphases */;
-			targetProxy = 2F17B2E024E625F200765F81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,44 +440,6 @@
 			};
 			name = Release;
 		};
-		2F17B2EF24E625F200765F81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = moonphasesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.moonphases.moonphasesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = moonphases;
-			};
-			name = Debug;
-		};
-		2F17B2F024E625F200765F81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = moonphasesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.moonphases.moonphasesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = moonphases;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,15 +466,6 @@
 			buildConfigurations = (
 				2F17B2EC24E625F200765F81 /* Debug */,
 				2F17B2ED24E625F200765F81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F17B2EE24E625F200765F81 /* Build configuration list for PBXNativeTarget "moonphasesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F17B2EF24E625F200765F81 /* Debug */,
-				2F17B2F024E625F200765F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
