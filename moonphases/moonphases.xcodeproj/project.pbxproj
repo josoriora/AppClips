@@ -15,6 +15,7 @@
 		2FD47D2224EB649A00401DAF /* MoonPhaseFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD47D2124EB649A00401DAF /* MoonPhaseFacadeTests.swift */; };
 		3E18835F253E805E00FC65EC /* MoonPhaseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E18835E253E805E00FC65EC /* MoonPhaseViewModelTests.swift */; };
 		3E188363253E825100FC65EC /* DateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E188362253E825100FC65EC /* DateFactory.swift */; };
+		3E18836A253E8FAD00FC65EC /* MoonPhaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E188369253E8FAD00FC65EC /* MoonPhaseViewModel.swift */; };
 		3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25645424F3527A00A40518 /* AstrologyCalculator.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		2FD47D2124EB649A00401DAF /* MoonPhaseFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseFacadeTests.swift; sourceTree = "<group>"; };
 		3E18835E253E805E00FC65EC /* MoonPhaseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseViewModelTests.swift; sourceTree = "<group>"; };
 		3E188362253E825100FC65EC /* DateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFactory.swift; sourceTree = "<group>"; };
+		3E188369253E8FAD00FC65EC /* MoonPhaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseViewModel.swift; sourceTree = "<group>"; };
 		3E25645424F3527A00A40518 /* AstrologyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				2F17B2C824E625F000765F81 /* ContentView.swift */,
 				2F17B2CA24E625F100765F81 /* Assets.xcassets */,
 				2FD47D1E24EB3CFF00401DAF /* Calculations */,
+				3E188368253E8F8B00FC65EC /* ViewModel */,
 				2F17B2CF24E625F100765F81 /* Info.plist */,
 				2F17B2CC24E625F100765F81 /* Preview Content */,
 			);
@@ -119,6 +122,14 @@
 				2FD47D1F24EB3D3A00401DAF /* MoonPhaseFacade.swift */,
 			);
 			path = Calculations;
+			sourceTree = "<group>";
+		};
+		3E188368253E8F8B00FC65EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E188369253E8FAD00FC65EC /* MoonPhaseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				2F17B2C924E625F000765F81 /* ContentView.swift in Sources */,
 				3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */,
 				2FD47D2024EB3D3A00401DAF /* MoonPhaseFacade.swift in Sources */,
+				3E18836A253E8FAD00FC65EC /* MoonPhaseViewModel.swift in Sources */,
 				2F17B2C724E625F000765F81 /* moonphasesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

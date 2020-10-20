@@ -83,7 +83,3 @@ class MoonPhaseFacadeTests: XCTestCase {
         XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .lastQuarter)
     }
 }
-
-fileprivate extension MoonPhaseFacadeTests {
-
-}

@@ -33,13 +33,3 @@ class  MoonPhaseViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.title, "New Moon")
     }
 }
-
-class MoonPhaseViewModel {
-    let moonPhaseForDate: MoonPhaseForDate
-    let title: String
-    
-    init(moonPhaseForDate: MoonPhaseForDate) {
-        self.moonPhaseForDate = moonPhaseForDate
-        self.title = moonPhaseForDate.moonPhase.description()
-    }
-}
