@@ -22,20 +22,24 @@ class  MoonPhaseViewModelTests: XCTestCase {
         // Given
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 23),
                                  "Insert a valid date")
+        let moonPhaseForDate = MoonPhaseForDate(date: date, moonPhase: .newMoon)
         
         // When
-        let viewModel = MoonPhaseViewModel(date: date)
+        let viewModel = MoonPhaseViewModel(moonPhaseForDate: moonPhaseForDate)
         
         // Then
         XCTAssertNotNil(viewModel)
-        XCTAssertEqual(viewModel.date, date)
+        XCTAssertNotNil(viewModel.moonPhaseForDate)
+        XCTAssertEqual(viewModel.title, "New Moon")
     }
 }
 
 class MoonPhaseViewModel {
-    let date: Date
+    let moonPhaseForDate: MoonPhaseForDate
+    let title: String
     
-    init(date: Date) {
-        self.date = date
+    init(moonPhaseForDate: MoonPhaseForDate) {
+        self.moonPhaseForDate = moonPhaseForDate
+        self.title = moonPhaseForDate.moonPhase.description()
     }
 }

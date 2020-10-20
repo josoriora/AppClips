@@ -24,7 +24,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 16), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .waningCrescent)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .waningCrescent)
     }
     
     func test_MoonPhaseOn_2020Aug19_NewMoon() throws {
@@ -32,7 +32,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 19), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .newMoon)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .newMoon)
     }
     
     func test_MoonPhaseOn_2020Aug23_WaxingCrescent() throws {
@@ -40,7 +40,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 23), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .waxingCrescent)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .waxingCrescent)
     }
     
     func test_MoonPhaseOn_2020Aug25_FirstQuarter() throws {
@@ -48,7 +48,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 25), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .firstQuarter)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .firstQuarter)
     }
     
     func test_MoonPhaseOn_2020Aug27_WaxingGibbous() throws {
@@ -56,7 +56,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 8, day: 28), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .waxingGibbous)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .waxingGibbous)
     }
     
     func test_MoonPhaseOn_2020Sep02_FullMoon() throws {
@@ -64,7 +64,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 9, day: 2), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .fullMoon)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .fullMoon)
     }
     
     func test_MoonPhaseOn_2020Sep07_WanningGibbous() throws {
@@ -72,7 +72,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 9, day: 7), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .waningGibbous)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .waningGibbous)
     }
     
     func test_MoonPhaseOn_2020Sep10_LastQuarter() throws {
@@ -80,7 +80,7 @@ class MoonPhaseFacadeTests: XCTestCase {
         let date = try XCTUnwrap(DateFactory.dateFrom(year: 2020, month: 9, day: 10), "Insert a valid date")
         
         // Then
-        XCTAssertEqual(sut.moonPhaseOn(date: date), .lastQuarter)
+        XCTAssertEqual(sut.moonPhaseOn(date: date).moonPhase, .lastQuarter)
     }
 }
 
