@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    private let date: Date
     @State private var viewModel: MoonPhaseViewModel?
+    
     var body: some View {
         VStack {
             Text("Moon Phase").padding()
@@ -17,6 +18,10 @@ struct ContentView: View {
         }.onAppear(perform: {
             self.loadViewModel()
         })
+    }
+    
+    init(date: Date) {
+        self.date = date
     }
     
     private func loadViewModel() {
@@ -29,6 +34,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(date: Date())
     }
 }
