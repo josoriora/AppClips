@@ -13,6 +13,10 @@ final class MoonPhaseFacade {
         
         return MoonPhaseForDate(date: date, moonPhase: moonPhase)
     }
+    
+    static func typesOfMoonPhases() -> [MoonPhase] {
+        return MoonPhase.allCases
+    }
 }
 
 struct MoonPhaseForDate {

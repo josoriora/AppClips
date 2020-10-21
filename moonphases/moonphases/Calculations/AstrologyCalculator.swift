@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MoonPhase {
+enum MoonPhase: CaseIterable {
     case newMoon
     case waxingCrescent
     case firstQuarter

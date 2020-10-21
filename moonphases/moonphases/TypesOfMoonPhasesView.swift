@@ -10,12 +10,14 @@ import Foundation
 import SwiftUI
 
 struct TypesOfMoonPhasesView: View {
-    @State var pushActive = false
+    @State var moonPhases = MoonPhaseFacade.typesOfMoonPhases()
     
     var body: some View {
         NavigationView {
             List {
-                Text("Moon")
+                ForEach(moonPhases, id: \.self) { moonPhase in
+                    Text(moonPhase.description())
+                }
             }
         }
     }
