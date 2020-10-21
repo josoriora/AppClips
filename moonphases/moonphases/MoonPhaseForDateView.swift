@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MoonPhaseForDateView.swift
 //  moonphases
 //
 //  Created by techtalks on 13/08/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoonPhaseForDateView: View {
     private let date: Date
     @State private var viewModel: MoonPhaseViewModel?
     
@@ -36,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(date: Date())
+        MoonPhaseForDateView(date: Date())
     }
 }

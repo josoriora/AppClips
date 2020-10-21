@@ -11,7 +11,7 @@ import SwiftUI
 struct moonphasesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(date: Date())
+            MoonPhaseForDateView(date: Date())
         }
     }
 }
