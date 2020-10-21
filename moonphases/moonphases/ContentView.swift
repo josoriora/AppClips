@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Moon Phase").padding()
+            Text("Moon Phase for date: \(viewModel?.dateString ?? "")").padding()
             Text(viewModel?.title ?? "")
         }.onAppear(perform: {
             self.loadViewModel()

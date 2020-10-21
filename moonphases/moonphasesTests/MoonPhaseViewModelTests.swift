@@ -31,5 +31,6 @@ class  MoonPhaseViewModelTests: XCTestCase {
         XCTAssertNotNil(viewModel)
         XCTAssertNotNil(viewModel.moonPhaseForDate)
         XCTAssertEqual(viewModel.title, "New Moon")
+        XCTAssertEqual(viewModel.dateString, "23 August 2020")
     }
 }
