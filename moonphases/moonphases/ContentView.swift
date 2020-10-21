@@ -14,6 +14,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Moon Phase for date: \(viewModel?.dateString ?? "")").padding()
+            Image(viewModel?.imageName ?? "").resizable()
+                .aspectRatio(contentMode: .fit)
             Text(viewModel?.title ?? "")
         }.onAppear(perform: {
             self.loadViewModel()
