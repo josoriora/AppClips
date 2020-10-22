@@ -7,22 +7,27 @@
 
 import SwiftUI
 
+final class MainMenuViewModel: ObservableObject {
+    @Published var dateViewActive = false
+    @Published var typesOfMoonActive = false
+    @Published var date = Date()
+}
+
 struct MainMenu: View {
-    @State var dateViewActive = false
-    @State var typesOfMoonActive = false
+    @ObservedObject var viewModel = MainMenuViewModel()
     
     var body: some View {
         NavigationView {
             VStack(spacing: 70) {
                 NavigationLink(
-                    destination: MoonPhaseForDateView(date: Date()),
-                    isActive: self.$dateViewActive,
+                    destination: MoonPhaseForDateView(date: viewModel.date),
+                    isActive: $viewModel.dateViewActive,
                     label: {
                         Text("Moon phase today")
                     }).font(.largeTitle)
                 NavigationLink(
                     destination: TypesOfMoonPhasesView(),
-                    isActive: self.$typesOfMoonActive,
+                    isActive: $viewModel.typesOfMoonActive,
                     label: {
                         Text("Types of Moon phases")
                     }).font(.largeTitle)

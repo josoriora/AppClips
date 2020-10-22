@@ -27,7 +27,6 @@ struct MoonPhaseForDateView: View {
     }
     
     private func loadViewModel() {
-        let date = Date()
         let moonPhase = MoonPhaseFacade.moonPhaseOn(date: date)
         
         self.viewModel = MoonPhaseViewModel(moonPhaseForDate: moonPhase)
