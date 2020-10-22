@@ -11,7 +11,7 @@ import SwiftUI
 struct moonphasesApp: App {
     var body: some Scene {
         WindowGroup {
-            MainMenu()
+            ContentView()
         }
     }
 }

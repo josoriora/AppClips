@@ -34,7 +34,7 @@ struct MoonPhaseForDateView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MoonPhaseForDateView_Previews: PreviewProvider {
     static var previews: some View {
         MoonPhaseForDateView(date: Date())
     }

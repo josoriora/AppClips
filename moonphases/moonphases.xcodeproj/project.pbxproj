@@ -19,6 +19,7 @@
 		3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25645424F3527A00A40518 /* AstrologyCalculator.swift */; };
 		3E6F2AD4253FDC1100529E49 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F2AD3253FDC1100529E49 /* MainMenu.swift */; };
 		3E6F2AD8253FE30700529E49 /* TypesOfMoonPhasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F2AD7253FE30700529E49 /* TypesOfMoonPhasesView.swift */; };
+		3ED82746254146F800FA335D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED82745254146F800FA335D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3E25645424F3527A00A40518 /* AstrologyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyCalculator.swift; sourceTree = "<group>"; };
 		3E6F2AD3253FDC1100529E49 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		3E6F2AD7253FE30700529E49 /* TypesOfMoonPhasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfMoonPhasesView.swift; sourceTree = "<group>"; };
+		3ED82745254146F800FA335D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2F17B2C624E625F000765F81 /* moonphasesApp.swift */,
+				3ED82745254146F800FA335D /* ContentView.swift */,
 				2F17B2C824E625F000765F81 /* MoonPhaseForDateView.swift */,
 				3E6F2AD3253FDC1100529E49 /* MainMenu.swift */,
 				3E6F2AD7253FE30700529E49 /* TypesOfMoonPhasesView.swift */,
@@ -239,6 +242,7 @@
 			files = (
 				2F17B2C924E625F000765F81 /* MoonPhaseForDateView.swift in Sources */,
 				3E6F2AD4253FDC1100529E49 /* MainMenu.swift in Sources */,
+				3ED82746254146F800FA335D /* ContentView.swift in Sources */,
 				3E25645524F3527A00A40518 /* AstrologyCalculator.swift in Sources */,
 				2FD47D2024EB3D3A00401DAF /* MoonPhaseFacade.swift in Sources */,
 				3E18836A253E8FAD00FC65EC /* MoonPhaseViewModel.swift in Sources */,
