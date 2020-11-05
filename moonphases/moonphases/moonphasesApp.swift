@@ -22,15 +22,6 @@ struct moonphasesApp: App {
     var body: some Scene {
         WindowGroup {
             MainMenu(viewModel: viewModel.mainMenuViewModel)
-                .onOpenURL(perform: { url in
-                    let selectedDate: Date = Date(timeIntervalSinceNow: -(60 * 60 * 24 * 2))
-                    let isMoonPhaseView: Bool = true
-                    
-                    // parsea
-                    
-                    viewModel.mainMenuViewModel.date = selectedDate
-                    viewModel.mainMenuViewModel.dateViewActive = isMoonPhaseView
-                })
         }
     }
 }
