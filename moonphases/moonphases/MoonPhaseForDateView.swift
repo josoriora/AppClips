@@ -8,33 +8,24 @@
 import SwiftUI
 
 struct MoonPhaseForDateView: View {
-    private let date: Date
-    @State private var viewModel: MoonPhaseViewModel?
+    @ObservedObject var viewModel: MoonPhaseViewModel
     
     var body: some View {
         VStack {
-            Text("Moon Phase for date: \(viewModel?.dateString ?? "")").padding()
-            Image(viewModel?.imageName ?? "").resizable()
+            Text("Moon Phase for date: \(viewModel.dateString)").padding()
+            Image(viewModel.imageName).resizable()
                 .aspectRatio(contentMode: .fit)
-            Text(viewModel?.title ?? "")
-        }.onAppear(perform: {
-            self.loadViewModel()
-        })
+            Text(viewModel.title)
+        }
     }
     
-    init(date: Date) {
-        self.date = date
-    }
-    
-    private func loadViewModel() {
-        let moonPhase = MoonPhaseFacade.moonPhaseOn(date: date)
-        
-        self.viewModel = MoonPhaseViewModel(moonPhaseForDate: moonPhase)
+    init(viewModel: MoonPhaseViewModel) {
+        self.viewModel = viewModel
     }
 }
 
 struct MoonPhaseForDateView_Previews: PreviewProvider {
     static var previews: some View {
-        MoonPhaseForDateView(date: Date())
+        MoonPhaseForDateView(viewModel: MoonPhaseViewModel(date: Date()))
     }
 }

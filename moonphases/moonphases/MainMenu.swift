@@ -20,7 +20,7 @@ struct MainMenu: View {
         NavigationView {
             VStack(spacing: 70) {
                 NavigationLink(
-                    destination: MoonPhaseForDateView(date: viewModel.date),
+                    destination: MoonPhaseForDateView(viewModel: MoonPhaseViewModel(date: viewModel.date)),
                     isActive: $viewModel.dateViewActive,
                     label: {
                         Text("Moon phase today")

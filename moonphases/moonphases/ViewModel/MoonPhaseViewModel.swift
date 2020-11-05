@@ -7,14 +7,14 @@
 
 import Foundation
 
-class MoonPhaseViewModel {
+class MoonPhaseViewModel: ObservableObject {
     let moonPhaseForDate: MoonPhaseForDate
     let title: String
     let dateString: String
     let imageName: String
     
-    init(moonPhaseForDate: MoonPhaseForDate) {
-        self.moonPhaseForDate = moonPhaseForDate
+    init(date: Date) {
+        self.moonPhaseForDate = MoonPhaseFacade.moonPhaseOn(date: date)
         self.title = moonPhaseForDate.moonPhase.description()
         self.dateString = type(of: self).dateStringFor(date: moonPhaseForDate.date)
         self.imageName = type(of: self).imageNameFor(phase: moonPhaseForDate.moonPhase)
