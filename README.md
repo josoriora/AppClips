@@ -21,6 +21,7 @@ Inferred from: [Configure and link your app clips - WWDC 2020 - Videos - Apple D
 5. Go to Run (debug)
 6. Select  arguments tab and search for _XCAppClipURL
 7. In that field you can put test URLs
+8. Add code to route app clip based on URL
 
 ## Tutorial Support:
 Set of links used to create this presentation that can be useful later.
@@ -43,3 +44,6 @@ Set of links used to create this presentation that can be useful later.
 [Configure and link your app clips | WWDC Notes](https://wwdcnotes.com/notes/wwdc20/10146/)
 
 [How to get started with App Clips in iOS 14 | WWDC by Sundell & Friends](https://wwdcbysundell.com/2020/a-first-look-at-app-clips-in-ios-14/)
+
+### Ultimate Guide
+[Apple App Clips - A Definitive Guide for Developers | AppsFlyer](https://www.appsflyer.com/resources/others/apple-app-clips/)
